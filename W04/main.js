@@ -14,7 +14,15 @@ function main()
     scene.add( camera );
 
     var light = new THREE.PointLight( 0xffa0ff );
-    light.position.set(1, 1, 1);
+    light.position.set(2, 2, 2);
+    scene.add(light);
+
+    var light = new THREE.PointLight( 0x00ff00 );
+    light.position.set(1, 1, -1);
+    scene.add(light);
+
+    var light = new THREE.PointLight( 0xff0000 );
+    light.position.set(1, -1, -1);
     scene.add(light);
 
     var renderer = new THREE.WebGLRenderer();
@@ -32,7 +40,7 @@ function main()
     {
         requestAnimationFrame( loop );
         cube.rotation.x += 0.001;
-        cube.rotation.y += 0.001;
+        cube.rotation.y += 0.005;
         renderer.render( scene, camera );
     }
 }

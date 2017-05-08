@@ -1,11 +1,12 @@
 <html>
   <head>
-    <title>W04: Example 01</title> </head>
+    <title>W05: Task1</title>
+  </head>
   <body>
     <script src="three.min.js"></script>
-    <script src="main.js"></script>
+    <script src="task1.js"></script>
     <script>
-      main(); 
+      main();
     </script>
   </body>
 </html>
