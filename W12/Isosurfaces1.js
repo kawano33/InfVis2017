@@ -74,7 +74,7 @@ function Isosurfaces( volume, isovalue )
 
     geometry.computeVertexNormals();
     
-    var S0 = Math.ceil(255*0.7/0.8);
+    var S0 = isovalue;
     material.color = new THREE.Color().setHex( cmap[ S0 ][1] );
 
     return new THREE.Mesh( geometry, material );
