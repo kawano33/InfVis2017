@@ -31,7 +31,7 @@ function Isosurfaces( volume, isovalue )
                 var index = table_index( indices );
                 if ( index == 0 ) { continue; }
                 if ( index == 255 ) { continue; }
-		//document.write("<p>index:" +index+ "</p>");
+		//document.write("<p>index:" ++ "</p>");
 
                 for ( var j = 0; lut.edgeID[index][j] != -1; j += 3 )
                 {
